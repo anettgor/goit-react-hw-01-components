@@ -8,6 +8,9 @@ import FriendList from './FriendList/FriendList';
 import FriendListItem from './FriendList/FriendListItem';
 import friends from './../data/friends.json';
 
+import items from './../data/transactions.json';
+import Transactions from './Transactions/Transactions';
+
 export const App = () => {
   return (
     <div
@@ -38,6 +41,7 @@ export const App = () => {
           id={friends.id}
         />
       </FriendList>
+      <Transactions items={items} />
     </div>
   );
 };
