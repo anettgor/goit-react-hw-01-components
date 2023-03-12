@@ -20,13 +20,14 @@
 .item {
   color: white;
   background-color: #6063ff;
-  padding: 20px;
+  padding: 20px 25px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  gap: 5px;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 7px 13px rgba(0, 0, 0, 0.7);
   transition: scale 0.3s ease-in-out;
 }
 .item:nth-of-type(even) {
@@ -38,8 +39,10 @@
 }
 
 .label {
-  font-size: 25px;
+  font-size: 19px;
+  font-weight: 400;
 }
 .percentage {
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 500;
 }
