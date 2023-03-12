@@ -1,0 +1,37 @@
+.online {
+  background-color: green;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.offline {
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.friends-list {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  margin-bottom: 50px;
+}
+.item {
+  display: flex;
+  padding: 30px 80px;
+  align-items: center;
+  gap: 10px;
+}
+
+.item:nth-last-of-type(even) {
+  background-color: #f6f6f6;
+}
+/* .item:not(:last-of-type) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(210, 213, 217);
+} */
+.avatar {
+  background-color: white;
+  border-radius: 50%;
+}
