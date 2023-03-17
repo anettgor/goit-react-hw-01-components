@@ -5,7 +5,6 @@ import Statistics from './Statistics/Statistics';
 import data from './../data/data.json';
 
 import FriendList from './FriendList/FriendList';
-import FriendListItem from './FriendList/FriendListItem';
 import friends from './../data/friends.json';
 
 import items from './../data/transactions.json';
@@ -24,23 +23,15 @@ export const App = () => {
       }}
     >
       <Profile
-        key={user.id}
+        id={user.id}
         username={user.username}
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics title="Upload stats" stats={data} key={data.id} />
-      <FriendList friends={friends}>
-        <FriendListItem
-          key={friends.key}
-          avatar={friends.avatar}
-          name={friends.name}
-          isOnline={friends.isOnline}
-          id={friends.id}
-        />
-      </FriendList>
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
       <Transactions items={items} />
     </div>
   );
